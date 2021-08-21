@@ -22,19 +22,22 @@
                     <option value="" disabled selected>Pick a task type</option>
                     <option value="Print">Print</option>
                     <option value="Web">Web</option>
-                    <option value="Mobile">Mobile</option>
+                    <h3 class="task-name">Sample Task</h3>
+                    <span class="task-type">Mobile</span>
                   </select>
                 </div>
                 <div class="form-group">
-                <button class="btn" id="save-task" type="submit">Add Task</button>
+                <button class="btn" id="save-task" type="submit">Save Task</button>
             </div>
             </form>
     </header>
 
-    <main class="page-content">
+    <main class="page-content" id="page-content">
         <section class="task-list-wrapper">
             <h2 class="list-title">Task To Do</h2>
             <ul class="task-list" id="tasks-to-do"></ul>
+            <button class="btn edit-btn" data-task-id="0">Edit</button>
+            <button class="btn delete-btn" data-task-id="0">Delete</button>
         </section>
 
         <!-- Tasks In Progress -->
